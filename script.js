@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Configuration
     const particleCount = 80; // Number of particles
     const connectionDistance = 150; // Max distance to draw lines
-    const moveSpeed = 0.3; // Speed of particles
+    const moveSpeed = 0.8; // Increased speed
     
     // Resize canvas to fit the hero section
     function resize() {
@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             this.y = Math.random() * height;
             this.vx = (Math.random() - 0.5) * moveSpeed;
             this.vy = (Math.random() - 0.5) * moveSpeed;
-            this.size = Math.random() * 2 + 1; // Random size between 1 and 3
-            this.alpha = Math.random() * 0.5 + 0.2; // Random opacity
+            this.size = Math.random() * 2 + 1.5; // Slightly larger particles
+            this.alpha = Math.random() * 0.5 + 0.4; // More visible (0.4 to 0.9)
         }
         
         update() {
